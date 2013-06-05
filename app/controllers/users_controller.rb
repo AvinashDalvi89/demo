@@ -80,4 +80,8 @@ class UsersController < ApplicationController
       format.xml  { head :ok }
     end
   end
+
+    def avi
+     @user = User.find(params[:id])
+    end
 end
